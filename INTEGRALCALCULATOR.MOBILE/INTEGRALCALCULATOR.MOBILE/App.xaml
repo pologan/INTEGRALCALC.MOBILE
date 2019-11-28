@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:local="clr-namespace:INTEGRALCALC.MOBILE"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="INTEGRALCALCULATOR.MOBILE.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <!-- Konwertery -->
+            <local:BoolToColorConverter x:Key="boolToColor" />
+            
+            <!-- Czcionki -->
+            <OnPlatform
+                x:TypeArguments="x:String"
+                x:Key="DelIcons">
+                <On
+                    Platform="iOS"
+                    Value="delicons" />
+                <On
+                    Platform="Android"
+                    Value="delicons.ttf#fontello" />
+            </OnPlatform>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
